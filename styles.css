@@ -240,12 +240,35 @@ template {
   color: var(--color-red);
 }
 
-.about,
-.quotes,
-.information,
+.faq,
 .contact,
 .aside {
   padding: 75px 0;
+}
+
+.faq {
+  background-color: red;
+}
+
+.faq__title {
+color: purple;
+transform: rotateX('90deg');
+}
+
+.faqBox {
+  
+}
+
+.faqContainer {
+
+}
+
+.faqContainer__title {
+
+}
+
+.faqContainer__paragraph {
+
 }
 
 .contact {
@@ -456,7 +479,6 @@ template {
   gap: clamp(15px, 5vw, 50px);
   text-align: center;
 }
-
 
 @media screen and (min-width: 1024px) {
   .footerInformationSocialMedia {
