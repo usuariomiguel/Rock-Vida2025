@@ -241,9 +241,38 @@ template {
 }
 
 .faq,
+.aboutGeneral,
 .contact,
 .aside {
   padding: 75px 0;
+}
+
+.about {
+  background-color: #e2071421;
+  color: var(--color-title);
+}
+
+.aboutGeneral {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+}
+
+.aboutBox {
+  display: grid;
+  gap: 25px;
+}
+
+.aboutContainer {
+  background-color: white;
+  border: 1px solid var(--color-title);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.aboutContainer__title {
+  margin-bottom: .75rem;
 }
 
 .faq {
@@ -253,9 +282,6 @@ template {
   padding-right: clamp(0.75rem, 5vw, 2.8125rem);
 }
 
-.faq__title {
-}
-
 .faqBox {
   display: grid;
   gap: 25px;
@@ -263,24 +289,28 @@ template {
 
 .faqContainer {
   background-color: #e2071421;
-  border: 1px solid black;
+  border: 1px solid var(--color-title);
   padding: 2rem;
   border-radius: 10px;
-  color: #470709;
+  /* color: #470709; */
 }
 
 .faqContainertitle {
   margin-bottom: .75rem;
 }
 
-.faqContainer__paragraph {
-
-}
-
 @media screen and (min-width: 1024px) {
+  .aboutBox {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* gap: 35px; */
+  }
   .faqBox {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* gap: 35px; */
   }
+
 }
 
 .contact {
