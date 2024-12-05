@@ -271,6 +271,11 @@ template {
   border-radius: 10px;
 }
 
+.aboutContainer__svg {
+  max-width: 2.5rem;
+  margin-bottom: .75rem;
+}
+
 .aboutContainer__title {
   margin-bottom: .75rem;
 }
