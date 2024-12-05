@@ -247,28 +247,40 @@ template {
 }
 
 .faq {
-  background-color: red;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
 }
 
 .faq__title {
-color: purple;
-transform: rotateX('90deg');
 }
 
 .faqBox {
-  
+  display: grid;
+  gap: 25px;
 }
 
 .faqContainer {
-
+  background-color: #e2071421;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #470709;
 }
 
-.faqContainer__title {
-
+.faqContainertitle {
+  margin-bottom: .75rem;
 }
 
 .faqContainer__paragraph {
 
+}
+
+@media screen and (min-width: 1024px) {
+  .faqBox {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contact {
