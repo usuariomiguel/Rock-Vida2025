@@ -240,6 +240,224 @@ template {
   color: var(--color-red);
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-white);
+  height: 69.39px;
+  width: 100%;
+  z-index: 10;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-top: clamp(0.375rem, 2vw, 1rem);
+  padding-bottom: clamp(0.375rem, 2vw, 1rem);
+}
+
+.headerContainer__logo {
+  width: 100px;
+}
+
+.hamburger__img {
+  width: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 80px;
+
+
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.menuOpen {
+  position: absolute;
+  transform: translateY(-150%);
+  transition: transform 0.4s;
+  left: 0;
+  width: 100%;
+}
+
+.menuOpen.active {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 69.39px;
+  left: 0;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-title);
+  transform: translateY(0%);
+}
+
+.menuOpenList {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.menuOpenList__item {
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-title);
+  width: 100%;
+}
+
+.menuOpenList__link {
+  font-family: var(--ff-title);
+  width: 100%;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menuOpenDarkMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-title);
+  color: var(--color-white);
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+  height: 50.4px;
+}
+
+.menuOpenDarkMode__span {
+  font-family: var(--ff-title);
+  text-transform: uppercase;
+}
+
+.menuOpenDarkMode__img {
+  width: 30px;
+  fill: var(--color-white);
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
+}
+
+.navList {
+  display: flex;
+  gap: clamp(1.1rem, 1.75vw, 2rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.navList__link {
+  transition: 0.2s color;
+}
+
+.navList__link:hover {
+  color: var(--color-red);
+}
+
+@media screen and (min-width: 1024px) {
+  .navContainer {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 10vw, 6rem);
+  }
+}
+
+.navContainerRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navContainerRight__link {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navContainerRight__link {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+  }
+}
+
+.navContainerRight__DarkMode {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navContainerRight__DarkMode {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+.heroTextMove {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  text-orientation: sideways;
+  top: 4.3369rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroTextMove {
+    top: 80px;
+  }
+}
+
+.heroTextMoveContainer {
+  display: flex;
+  gap: 1.25rem;
+  height: 100%;
+  padding: 0.625rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: var(--color-title);
+}
+
+.heroTextMoveContainer__span {
+  display: inline-flex;
+  animation: marquee 3s linear infinite backwards;
+  color: var(--color-white);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 .faq,
 .aboutGeneral,
 .contact,
@@ -269,11 +487,6 @@ template {
   border: 1px solid var(--color-title);
   padding: 2rem;
   border-radius: 10px;
-}
-
-.aboutContainer__svg {
-  max-width: 2.5rem;
-  margin-bottom: .75rem;
 }
 
 .aboutContainer__title {
@@ -310,6 +523,7 @@ template {
     grid-template-rows: 1fr 1fr;
     /* gap: 35px; */
   }
+
   .faqBox {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
