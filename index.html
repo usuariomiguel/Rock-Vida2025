@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <!-- <script src="./src/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
@@ -109,9 +110,21 @@
       <div class="heroTextMove">
         <div class="heroTextMoveContainer">
           <span class="heroTextMoveContainer__span">Asociación Civil</span>
-          <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span>
+          <span class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span>
           <span class="heroTextMoveContainer__span">Asociación Civil</span>
-          <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span> <span class="heroTextMoveContainer__span">Asociación Civil</span>
+          <span class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span> <span
+            class="heroTextMoveContainer__span">Asociación Civil</span>
         </div>
       </div>
     </section>
@@ -119,81 +132,164 @@
       <div class="aboutGeneral">
         <h2 class="about__title subtitle">Sobre Nosotros</h2>
         <div class="aboutBox">
-         
+
           <div class="aboutContainer">
-  
+
             <h3 class="aboutContainer__title">Quiénes Somos</h3>
-            <p class="aboutContainer__paragraph">Somos Rock y Vida España, una asociación civil con sede en Arganda del Rey, Madrid, pero con un alcance nacional.</p>
+            <p class="aboutContainer__paragraph">Somos Rock y Vida España, una asociación civil con sede en Arganda del
+              Rey, Madrid, pero con un alcance nacional.</p>
           </div>
-  
+
           <div class="aboutContainer">
             <h3 class="aboutContainer__title">Nuestras Actividades</h3>
-            <p class="aboutContainer__paragraph">Ofrecemos una amplia variedad de actividades: talleres educativos, torneos de ajedrez y ping-pong,.</p>
+            <p class="aboutContainer__paragraph">Ofrecemos una amplia variedad de actividades: talleres educativos,
+              torneos de ajedrez y ping-pong,.</p>
           </div>
-  
+
           <div class="aboutContainer">
             <h3 class="aboutContainer__title">Nuestra Comunidad</h3>
-            <p class="aboutContainer__paragraph">Nuestra asociación es un espacio inclusivo para personas de todas las edades y orígenes.</p>
+            <p class="aboutContainer__paragraph">Nuestra asociación es un espacio inclusivo para personas de todas las
+              edades y orígenes.</p>
           </div>
-  
+
           <div class="aboutContainer">
             <h3 class="aboutContainer__title">Beneficios de Participar</h3>
-            <p class="aboutContainer__paragraph">Formar parte de Rock y Vida España te brinda acceso a actividades únicas, momentos inolvidables y servicios de profesionales. </p>
+            <p class="aboutContainer__paragraph">Formar parte de Rock y Vida España te brinda acceso a actividades
+              únicas, momentos inolvidables y servicios de profesionales. </p>
           </div>
-  
+
           <div class="aboutContainer">
             <h3 class="aboutContainer__title">Nuestro Equipo</h3>
-            <p class="aboutContainer__paragraph">Contamos con un equipo apasionado y comprometido que trabaja para ofrecer experiencias enriquecedoras. </p>
+            <p class="aboutContainer__paragraph">Contamos con un equipo apasionado y comprometido que trabaja para
+              ofrecer experiencias enriquecedoras. </p>
           </div>
-  
+
           <div class="aboutContainer">
             <h3 class="aboutContainer__title">Cómo Unirte</h3>
-            <p class="aboutContainer__paragraph">¡Únete a nuestra familia! Puedes hacerte socio para disfrutar de ventajas exclusivas, participar en nuestros eventos </p>
+            <p class="aboutContainer__paragraph">¡Únete a nuestra familia! Puedes hacerte socio para disfrutar de
+              ventajas exclusivas, participar en nuestros eventos </p>
           </div>
-          
+
         </div>
       </div>
     </section>
     <section class="quotes">
+      <div class="quotesGeneral">
+        <h2 class="quotes__title subtitle">Que dicen de nosotros</h2>
         <div class="quotesContainer">
-          <div class="quotesBox">
+          <div class="quotesBox" id="quotesBox">
             <div class="quotesInformation">
-              <img src="" alt="" class="quotesInformation__img" id="quotesPhoto1">
-              <span class="quotesInformation__name" id="quotesName1"></span>
+              <img src="https://e7.pngegg.com/pngimages/415/987/png-clipart-will-smith-will-smith-celebrities-face.png"
+                alt="" class="quotesInformation__img" id="quotesPhoto1">
+              <span class="quotesInformation__name" id="quotesName1">John Lennon</span>
             </div>
             <div class="quotesContent">
-              <img src="" alt="">
-              <p class="quotesContent__paragraph paragraph" id="quotesParagraph1"></p>
-              <img src="" alt="">
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_302_1238)">
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_302_1238">
+                    <rect width="28" height="27" fill="white" transform="matrix(-1 0 0 -1 28 27)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="quotesContent__paragraph paragraph" id="quotesParagraph1">La vida es lo que pasa mientras estás
+                ocupado haciendo otros planes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, magni.</p>
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="quotesContent__right">
+                <path
+                  d="M18.2584 19.125L20.5917 14.625H15.1667V6.75H23.3334V14.85L21.1167 19.125H18.2584ZM7.75841 19.125L10.0917 14.625H4.66675V6.75H12.8334V14.85L10.6167 19.125H7.75841Z"
+                  fill="#D90912" />
+              </svg>
             </div>
           </div>
-
-          <div class="quotesBox">
+  
+          <div class="quotesBox" id="quotesBox2">
             <div class="quotesInformation">
-              <img src="" alt="" class="quotesInformation__img" id="quotesPhoto2">
-              <span class="quotesInformation__name" id="quotesName2"></span>
+              <img src="https://e7.pngegg.com/pngimages/415/987/png-clipart-will-smith-will-smith-celebrities-face.png"
+                alt="" class="quotesInformation__img" id="quotesPhoto2">
+              <span class="quotesInformation__name" id="quotesName2">John Lennon</span>
             </div>
             <div class="quotesContent">
-              <img src="" alt="">
-              <p class="quotesContent__paragraph paragraph" id="quotesParagraph2"></p>
-              <img src="" alt="">
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_302_1238)">
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_302_1238">
+                    <rect width="28" height="27" fill="white" transform="matrix(-1 0 0 -1 28 27)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="quotesContent__paragraph paragraph" id="quotesParagraph2">La vida es lo que pasa mientras estás
+                ocupado haciendo otros planes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, magni.</p>
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="quotesContent__right">
+                <path
+                  d="M18.2584 19.125L20.5917 14.625H15.1667V6.75H23.3334V14.85L21.1167 19.125H18.2584ZM7.75841 19.125L10.0917 14.625H4.66675V6.75H12.8334V14.85L10.6167 19.125H7.75841Z"
+                  fill="#D90912" />
+              </svg>
             </div>
           </div>
-
-          <div class="quotesBox">
+  
+          <div class="quotesBox" id="quotesBox3">
             <div class="quotesInformation">
-              <img src="" alt="" class="quotesInformation__img" id="quotesPhoto3">
-              <span class="quotesInformation__name" id="quotesName3"></span>
+              <img src="https://e7.pngegg.com/pngimages/415/987/png-clipart-will-smith-will-smith-celebrities-face.png"
+                alt="" class="quotesInformation__img" id="quotesPhoto3">
+              <span class="quotesInformation__name" id="quotesName3">John Lennon</span>
             </div>
             <div class="quotesContent">
-              <img src="" alt="">
-              <p class="quotesContent__paragraph paragraph" id="quotesParagraph3"></p>
-              <img src="" alt="">
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_302_1238)">
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                  <path
+                    d="M9.74158 7.875L7.40825 12.375L12.8333 12.375L12.8333 20.25L4.66658 20.25V12.15L6.88325 7.875H9.74158ZM20.2416 7.875L17.9083 12.375H23.3333V20.25H15.1666L15.1666 12.15L17.3833 7.875H20.2416Z"
+                    fill="#D90912" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_302_1238">
+                    <rect width="28" height="27" fill="white" transform="matrix(-1 0 0 -1 28 27)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="quotesContent__paragraph paragraph" id="quotesParagraph3">La vida es lo que pasa mientras estás
+                ocupado haciendo otros planes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, magni.</p>
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="quotesContent__right">
+                <path
+                  d="M18.2584 19.125L20.5917 14.625H15.1667V6.75H23.3334V14.85L21.1167 19.125H18.2584ZM7.75841 19.125L10.0917 14.625H4.66675V6.75H12.8334V14.85L10.6167 19.125H7.75841Z"
+                  fill="#D90912" />
+              </svg>
             </div>
           </div>
-           
+  
         </div>
-        <div class="quotesArrows"></div>
+        <div class="quotesArrows">
+          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="quotesArrowLeft">
+            <path
+              d="M25.8334 15.9375L8.848 15.9375L16.8563 23.6875L15.5001 25L5.16675 15L15.5001 5L16.8563 6.3125L8.848 14.0625L25.8334 14.0625V15.9375Z"
+              fill="black" />
+          </svg>
+          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="quotesArrowRight">
+            <path
+              d="M5.16659 14.0625L22.152 14.0625L14.1437 6.3125L15.4999 5L25.8333 15L15.4999 25L14.1437 23.6875L22.152 15.9375L5.16659 15.9375V14.0625Z"
+              fill="black" />
+          </svg>
+        </div>
+      </div>
     </section>
     <section class="faq">
       <h2 class="faqtitle subtitle">Preguntas Frecuentes</h2>
@@ -409,4 +505,5 @@
     </div>
   </footer>
 </body>
+
 </html>
