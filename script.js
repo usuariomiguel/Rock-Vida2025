@@ -32,6 +32,24 @@ const quotes = [
       img: 'scr=""'
     }
   ];
+
+  const quotes3 = [
+    {
+      text: "El campamento de verano fue una experiencia increíble, llena de aprendizajes, nuevas amistades y momentos que siempre llevaré conmigo.",
+      author: "Clara Martínez",
+      img: 'scr=""'
+    },
+    {
+      text: "Gracias a este torneo de ping pong, pudimos medir nuestras destrezas, pero más que nada, compartimos momentos que nos fortalecieron como grupo.",
+      author: "Miguel Cantos",
+      img: 'scr=""'
+    },
+    {
+      text: "El arte terapia fue una experiencia transformadora que me ayudó a explorar mi creatividad mientras trabajaba en mi bienestar emocional.",
+      author: "José Rodríguez",
+      img: 'scr=""'
+    }
+  ];
   
   let currentIndex = 0;
   
@@ -43,12 +61,12 @@ const quotes = [
 
   function showQuote2(index) {
     document.getElementById("quotesParagraph2").textContent = `${quotes2[index].text}`;
-    document.getElementById("quotesName2").textContent = `${quote2[index].author}`;
+    document.getElementById("quotesName2").textContent = `${quotes2[index].author}`;
   }
 
   function showQuote3(index) {
-    document.getElementById("quotesParagraph3").textContent = `${quotes[index].text}`;
-    document.getElementById("quotesName3").textContent = `${quotes[index].author}`;
+    document.getElementById("quotesParagraph3").textContent = `${quotes3[index].text}`;
+    document.getElementById("quotesName3").textContent = `${quotes3[index].author}`;
   }
   
   // Función para mostrar la siguiente cita
