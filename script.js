@@ -96,12 +96,13 @@ window.addEventListener('load',function () {
 
 
   const hero = document.getElementById("hero");
+  
 
 // Lista de imágenes para el fondo
 const images = [
-  'url("https://www.transfermarkt.es/lionel-messi/profil/spieler/28003)',
-  'url("https://www.gettyimages.com/photos/lionel-messi")',
-  'url("https://www.nytimes.com/athletic/5614184/2024/07/06/lionel-messi-lamine-yamal-photo-barcelona/")'
+  'url("https://s.france24.com/media/display/451ed2b8-eed6-11ea-afdd-005056bf87d6/w:1280/p:16x9/messi-1805.jpg")',
+  'url("https://www.fcbarcelona.com/fcbarcelona/photo/2022/08/02/ae5252d1-b79b-4950-9e34-6e67fac09bb0/LeoMessi20092010_pic_fcb-arsenal62.jpg")',
+  'url("https://estaticos-cdn.prensaiberica.es/clip/2bc96e60-980d-4e41-8061-2cf8e5aedc77_alta-libre-aspect-ratio_default_0.jpg")'
 ];
 
 let currentIndex1 = 0;
@@ -118,6 +119,6 @@ setInterval(changeBackground, 5000);
 // Iniciar el cambio de fondo inmediatamente
 changeBackground();
 
-console.log(hero)
+
 
 })
