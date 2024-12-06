@@ -1,34 +1,34 @@
 const quotes = [
     {
-      text: "La vida es lo que pasa mientras estás ocupado haciendo otros planes.",
-      author: "John Lennon",
+      text: "Participar en este torneo de ajedrez ha sido una experiencia única, donde no solo pusimos a prueba nuestra mente, sino también nuestras habilidades estratégicas.",
+      author: "Carlos Sánchez",
       img: 'scr=""'
     },
     {
-      text: "El único modo de hacer un gran trabajo es amar lo que haces.",
-      author: "Steve Jobs",
+      text: "El ajedrez no es solo un juego, es un desafío constante que nos enseña a pensar y tomar decisiones bajo presión. Gracias por esta maravillosa oportunidad.",
+      author: "Ana López",
       img: 'scr=""'
     },
     {
-      text: "La felicidad no es algo hecho. Viene de tus propias acciones.",
-      author: "Dalai Lama",
+      text: "El torneo de ping pong fue una oportunidad increíble para demostrar nuestras habilidades, pero sobre todo, para disfrutar del trabajo en equipo y la sana competencia.",
+      author: "Luis Martín",
       img: 'scr=""'
     }
   ];
   const quotes2 = [
     {
-      text: "La felicidad no es algo hecho. Viene de tus propias acciones.",
-      author: "John Lennon",
+      text: "El campamento de verano fue una experiencia increíble, llena de aprendizajes, nuevas amistades y momentos que siempre llevaré conmigo.",
+      author: "Clara Martínez",
       img: 'scr=""'
     },
     {
-      text: "La felicidad no es algo hecho. Viene de tus propias accioneso. Viene de tus propias acciones",
-      author: "Steve Jobs",
+      text: "Gracias a este torneo de ping pong, pudimos medir nuestras destrezas, pero más que nada, compartimos momentos que nos fortalecieron como grupo.",
+      author: "Miguel Cantos",
       img: 'scr=""'
     },
     {
-      text: "La felicidad no es algo hecho. Viene de tus propias accionesLa felicidad no es algo hecho.propias acciones",
-      author: "Dalai Lama",
+      text: "El arte terapia fue una experiencia transformadora que me ayudó a explorar mi creatividad mientras trabajaba en mi bienestar emocional.",
+      author: "José Rodríguez",
       img: 'scr=""'
     }
   ];
@@ -69,8 +69,6 @@ const quotes = [
   
   // Cambio automático de cita cada 5 segundos
   setInterval(nextQuote, 3000); // 5000ms = 5 segundos
-  setInterval(nextQuote2, 3000); // 5000ms = 5 segundos
-  setInterval(nextQuote3, 3000); // 5000ms = 5 segundos
   
   // Mostrar la primera cita al cargar la página
   showQuote(currentIndex);
