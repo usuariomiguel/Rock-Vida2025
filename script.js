@@ -1,4 +1,5 @@
-const quotes = [
+window.addEventListener('load',function () {
+  const quotes = [
     {
       text: "Participar en este torneo de ajedrez ha sido una experiencia única, donde no solo pusimos a prueba nuestra mente, sino también nuestras habilidades estratégicas.",
       author: "Carlos Sánchez",
@@ -92,3 +93,31 @@ const quotes = [
   showQuote(currentIndex);
   showQuote2(currentIndex);
   showQuote3(currentIndex);
+
+
+  const hero = document.getElementById("hero");
+
+// Lista de imágenes para el fondo
+const images = [
+  'url("https://www.transfermarkt.es/lionel-messi/profil/spieler/28003)',
+  'url("https://www.gettyimages.com/photos/lionel-messi")',
+  'url("https://www.nytimes.com/athletic/5614184/2024/07/06/lionel-messi-lamine-yamal-photo-barcelona/")'
+];
+
+let currentIndex1 = 0;
+
+// Función para cambiar la imagen de fondo
+function changeBackground() {
+  hero.style.backgroundImage = images[currentIndex1];
+  currentIndex1 = (currentIndex1 + 1) % images.length;
+}
+
+// Cambiar la imagen de fondo cada 5 segundos
+setInterval(changeBackground, 5000);
+
+// Iniciar el cambio de fondo inmediatamente
+changeBackground();
+
+console.log(hero)
+
+})
