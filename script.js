@@ -17,17 +17,17 @@ const quotes = [
   ];
   const quotes2 = [
     {
-      text: "bgvedusowipfghewusdipgvfbewsdriuyofghewsyuiof.",
+      text: "La felicidad no es algo hecho. Viene de tus propias acciones.",
       author: "John Lennon",
       img: 'scr=""'
     },
     {
-      text: "nfuief",
+      text: "La felicidad no es algo hecho. Viene de tus propias accioneso. Viene de tus propias acciones",
       author: "Steve Jobs",
       img: 'scr=""'
     },
     {
-      text: "AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBB.",
+      text: "La felicidad no es algo hecho. Viene de tus propias accionesLa felicidad no es algo hecho.propias acciones",
       author: "Dalai Lama",
       img: 'scr=""'
     }
@@ -68,9 +68,9 @@ const quotes = [
   }
   
   // Cambio automático de cita cada 5 segundos
-  setInterval(nextQuote, 5000); // 5000ms = 5 segundos
-  setInterval(nextQuote2, 5000); // 5000ms = 5 segundos
-  setInterval(nextQuote3, 5000); // 5000ms = 5 segundos
+  setInterval(nextQuote, 3000); // 5000ms = 5 segundos
+  setInterval(nextQuote2, 3000); // 5000ms = 5 segundos
+  setInterval(nextQuote3, 3000); // 5000ms = 5 segundos
   
   // Mostrar la primera cita al cargar la página
   showQuote(currentIndex);
