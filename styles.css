@@ -11,7 +11,7 @@
   /*  Font-Family */
   --ff-title: 'Lilita One', cursive;
   --ff-paragraph: 'Nunito', sans-serif;
-  --box-shadow: 10px 10px 10px 0 #0000005e;
+  --box-shadow: 7px 7px 15px 3px #0000001d;
   --paddingBox: 1.25rem;
 
   --animate-duration: 800ms;
@@ -52,14 +52,8 @@ h5 {
   margin: 0;
   line-height: 1.5;
   text-transform: uppercase;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
   font-family: var(--ff-title);
+  color: var(--color-title);
 }
 
 h1 {
@@ -70,11 +64,17 @@ h2 {
   /* font-size: clamp(2rem, 4.25vw, 4.375rem); */
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
 }
 
 h3 {
   /* font-size: clamp(1.5rem, 2.25vw, 2.1875rem); */
   font-size: clamp(18px, 2.25vw, 22px);
+  font-weight: 400;
+}
+
+.quotesInformation__name, h3 {
+  color: #1d1d1be8;
 }
 
 /* h4 {
@@ -452,7 +452,7 @@ template {
   margin: 0 auto;
   background: #f3dadc;
   border-radius: 10px;
-  border: 1px solid var(--color-title);
+  border: 1px solid var(--color-border);
   
   z-index: 2;
 }
@@ -466,7 +466,7 @@ template {
   height: 3rem;
   padding: 0 2rem;
   border-radius: 10px;
-  border: 1px solid var(--color-title);
+  border: 1px solid var(--color-border);
   background-color: white;
 }
 
@@ -481,7 +481,6 @@ template {
 
 .about {
   background-color: #e2071421;
-  color: var(--color-title);
 }
 
 .aboutGeneral {
@@ -498,7 +497,7 @@ template {
 
 .aboutContainer {
   background-color: white;
-  border: 1px solid var(--color-title);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
 }
 
@@ -546,7 +545,7 @@ template {
   gap: 2rem;
   background-color: #e2071421;
   border-radius: 10px;
-  border: 1px solid var(--color-title);
+  border: 1px solid var(--color-border);
   min-height: 280px;
 }
 
@@ -607,7 +606,7 @@ template {
 
 .faqContainer {
   background-color: #e2071421;
-  border: 1px solid var(--color-title);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
   /* color: #470709; */
 }
