@@ -14,6 +14,9 @@
   --box-shadow: 10px 10px 10px 0 #0000005e;
   --paddingBox: 1.25rem;
 
+  --animate-duration: 800ms;
+  --animate-delay-1s: 1s;
+
 }
 
 *,
@@ -514,6 +517,14 @@ template {
 .aboutContainerBox , .quotesBox , .faqContainer {
   padding: var(--paddingBox);
 }
+
+.aboutContainerBox , .quotesContent__paragraph , .faqContainer {
+  text-align: center;
+}
+
+.quotesContent__paragraph {
+  padding: 0 15px;
+} 
 
 .aboutContainer__title {
   margin-bottom: .75rem;
