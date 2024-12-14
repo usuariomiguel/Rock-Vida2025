@@ -639,7 +639,7 @@ gap: 1rem;
   gap: 1rem;
 }
 
-/* .form__send {
+.form__send {
   position: relative;
   align-self: flex-end;
   padding: clamp(0.75rem, 1.75vw, 1.25rem) clamp(1.5rem, 3vw, 8rem);
@@ -650,51 +650,8 @@ gap: 1rem;
   outline: none;
   cursor: pointer;
   border: none;
-  display: block;
-  overflow: hidden;
-  background: #000;
-  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  mask-size: 7100% 100%;
-  animation: ani2 0.7s steps(70) forwards;
-  transition: background-color 0.3s;
-/* }  */
+} 
 
-.form__send {
-  position: relative;
-  align-self: flex-end;
-  padding: clamp(0.75rem, 1.75vw, 1.25rem) clamp(1.5rem, 3vw, 8rem);
-  background-color: #000; /* Fondo inicial negro */
-  color: var(--color-white);
-  border-radius: 10px;
-  font-size: clamp(0.9375rem, 1.15vw, 1.25rem);
-  outline: none;
-  cursor: pointer;
-  border: none;
-  display: block;
-  overflow: hidden;
-  background: #000;
-  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  mask-size: 7100% 100%;
-  mask-position: 100% 0; /* Posición inicial */
-}
-
-.form__send:hover {
-  animation: ani 0.7s steps(70) forwards; /* Animación solo en hover */
-}
-
-@keyframes ani {
-  from {
-    mask-position: 100% 0; /* Estado inicial */
-  }
-  to {
-    mask-position: 0 0; /* Estado final durante el hover */
-  }
-}
-
-.form__send:active,
-.form__send:not(:hover) {
-  animation: ani-reverse 0.7s steps(70) forwards; /* Regresa a la normalidad */
-}
 
 .inputContainer {
   display: flex;
@@ -705,7 +662,7 @@ gap: 1rem;
 .inputContainer__input {
   display: block;
   width: 100%;
-  padding: clamp(0.75rem, 2vw, 1.5rem);
+  padding: clamp(0.75rem, 2vw, 1.25rem);
   border: 2px solid transparent;
   transition: 0.2s outline;
   outline: 2px solid transparent;
