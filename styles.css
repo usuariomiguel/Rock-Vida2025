@@ -12,7 +12,10 @@
   --ff-title: 'Lilita One', cursive;
   --ff-paragraph: 'Nunito', sans-serif;
 
-  --box-shadow: 3px 3px 15px 0 #1d1d1b66;
+  --box-shadow: 10px 10px 10px 0 #0000005e;
+  --paddingBox: 1.25rem;
+  /* --paddingBox: minmax(1.25rem , 1.5rem) */
+
 }
 
 *,
@@ -25,6 +28,7 @@ html {
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  
 }
 
 body {
@@ -55,21 +59,23 @@ h5 {
 }
 
 h1 {
-  font-size: clamp(2rem, 4.25vw, 4.375rem);
+  font-size: clamp(2rem, 4.25vw, 70px);
 }
 
 h2 {
-  font-size: clamp(2rem, 4.25vw, 4.375rem);
+  /* font-size: clamp(2rem, 4.25vw, 4.375rem); */
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: clamp(2rem, 5vw, 4rem);
 }
 
 h3 {
-  font-size: clamp(1.5rem, 2.25vw, 2.1875rem);
+  /* font-size: clamp(1.5rem, 2.25vw, 2.1875rem); */
+  font-size: clamp(18px, 2.25vw, 22px);
 }
 
-h4 {
+/* h4 {
   font-size: clamp(1.0625rem, 1.5vw, 1.4375rem);
-}
+} */
 
 img {
   display: block;
@@ -396,6 +402,7 @@ template {
   text-orientation: sideways;
   top: 4.3369rem;
   width: 100%;
+  z-index: 4;
 }
 
 .heroTextMoveContainer {
@@ -488,8 +495,20 @@ template {
 .aboutContainer {
   background-color: white;
   border: 1px solid var(--color-title);
-  padding: 2rem;
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.aboutContainer__img {
+  height: 150px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.aboutContainerBox , .quotesBox , .faqContainer {
+  padding: var(--paddingBox);
 }
 
 .aboutContainer__title {
@@ -511,7 +530,6 @@ template {
   display: grid;
   gap: 2rem;
   background-color: #e2071421;
-  padding: 2rem;
   border-radius: 10px;
   border: 1px solid var(--color-title);
   min-height: 280px;
@@ -574,7 +592,6 @@ template {
 .faqContainer {
   background-color: #e2071421;
   border: 1px solid var(--color-title);
-  padding: 2rem;
   border-radius: 10px;
   /* color: #470709; */
 }
@@ -836,6 +853,10 @@ template {
   .aboutBox {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .aboutContainer__img {
+    height: 200px;
   }
 
   .faqBox {
