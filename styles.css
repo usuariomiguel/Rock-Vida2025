@@ -7,6 +7,7 @@
   --color-title: #1D1D1B;
   --color-paragraph: #3F3F3F;
   --color-footer: #C6C6C6;
+  --color-border: rgba(0, 0, 0, 0.264);
   /*  Font-Family */
 
   --ff-title: 'Lilita One', cursive;
@@ -14,7 +15,6 @@
 
   --box-shadow: 10px 10px 10px 0 #0000005e;
   --paddingBox: 1.25rem;
-  /* --paddingBox: minmax(1.25rem , 1.5rem) */
 
 }
 
@@ -496,7 +496,6 @@ template {
   background-color: white;
   border: 1px solid var(--color-title);
   border-radius: 10px;
-  box-shadow: var(--box-shadow);
 }
 
 .aboutContainer__img {
@@ -505,6 +504,10 @@ template {
   display: inline-block;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+}
+
+.aboutContainer, .quotesBox, .faqContainer, .inputContainer__input, .textarea {
+  box-shadow: var(--box-shadow);
 }
 
 .aboutContainerBox , .quotesBox , .faqContainer {
@@ -552,6 +555,7 @@ template {
   width: 75px;
   height: 75px;
   border-radius: 50%;
+  border: 1px solid var(--color-border);
 }
 
 .quotesInformation__name {
@@ -637,7 +641,7 @@ template {
   outline: 2px solid transparent;
   border-radius: 10px;
   font-size: clamp(0.9375rem, 1.15vw, 1.25rem);
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
 }
 
 .inputContainer__input:focus {
@@ -648,7 +652,7 @@ template {
   display: block;
   width: 100%;
   padding: clamp(0.75rem, 2vw, 1.5rem);
-  min-height: 15rem;
+  min-height: 10rem;
   max-height: 20rem;
   resize: vertical;
   grid-area: "textarea";
@@ -657,7 +661,7 @@ template {
   outline: 2px solid transparent;
   border-radius: 10px;
   font-size: clamp(0.9375rem, 1.15vw, 1.25rem);
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
 }
 
 .textarea:focus {
