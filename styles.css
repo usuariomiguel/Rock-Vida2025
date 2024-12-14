@@ -9,10 +9,8 @@
   --color-footer: #C6C6C6;
   --color-border: rgba(0, 0, 0, 0.264);
   /*  Font-Family */
-
   --ff-title: 'Lilita One', cursive;
   --ff-paragraph: 'Nunito', sans-serif;
-
   --box-shadow: 10px 10px 10px 0 #0000005e;
   --paddingBox: 1.25rem;
 
@@ -28,7 +26,10 @@ html {
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
 body {

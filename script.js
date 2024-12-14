@@ -1,4 +1,29 @@
 window.addEventListener('load',function () {
+  ScrollReveal().reveal('.header', { delay: 500 });
+  ScrollReveal().reveal('.heroTextMove', { delay: 700 });
+  ScrollReveal().reveal('.hero', { delay: 900 });
+  ScrollReveal().reveal('.about', { delay: 500 });
+  ScrollReveal().reveal('.aboutContainer--first', { delay: 500 });
+  ScrollReveal().reveal('.aboutContainer--second', { delay: 650 });
+  ScrollReveal().reveal('.aboutContainer--third', { delay: 800 });
+  ScrollReveal().reveal('.aboutContainer--fourth', { delay: 500 });
+  ScrollReveal().reveal('.aboutContainer--fifth', { delay: 650 });
+  ScrollReveal().reveal('.aboutContainer--sixth', { delay: 800 });  
+  ScrollReveal().reveal('#quotesBox', { delay: 500 });
+  ScrollReveal().reveal('#quotesBox2', { delay: 700 });
+  ScrollReveal().reveal('#quotesBox3', { delay: 900 });
+  ScrollReveal().reveal('.faqContainer--first', { delay: 500 });
+  ScrollReveal().reveal('.faqContainer--second', { delay: 700 });
+  ScrollReveal().reveal('.faqContainer--third', { delay: 500 });
+  ScrollReveal().reveal('.faqContainer--fourth', { delay: 700 });
+  ScrollReveal().reveal('.input--name', { delay: 500 });
+  ScrollReveal().reveal('.input--email', { delay: 650 });
+  ScrollReveal().reveal('.input--asunto', { delay: 800 });
+  ScrollReveal().reveal('.textarea', { delay: 950 });
+  ScrollReveal().reveal('.aside', { delay: 500 });
+  ScrollReveal().reveal('.footerContainer', { delay: 500 });
+
+
   const quotes = [
     {
       text: "Participar en este torneo de ajedrez ha sido una experiencia única, donde no solo pusimos a prueba nuestra mente, sino también nuestras habilidades estratégicas.",
